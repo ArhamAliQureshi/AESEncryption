@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/mac/Documents/GitHub/node_ts_boilerplate/node_ts/src/logs/debug/.7b6ba5914780442970a944191fb023f73fa46068-audit.json",
+    "files": [
+        {
+            "date": 1656597317448,
+            "name": "/Users/mac/Documents/GitHub/node_ts_boilerplate/node_ts/src/logs/debug/2022-06-30.log",
+            "hash": "03accb7b8ad80f8f7f50004b4350bb2de1a6a0360265c0943163b3018889ee2e"
+        }
+    ],
+    "hashType": "sha256"
+}
