@@ -4,7 +4,7 @@
   "description": "",
   "main": "t.js",
   "scripts": {
-    "prebuild": "rimraf dist",
+    "prebuild": "rimraf dist && npm i babel",
     "prestart": "babel src --out-dir dist",
     "start": "node dist/index.js",    
     "start:dev": "nodemon --exec babel-node src/index.js",
