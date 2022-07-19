@@ -7,6 +7,7 @@ const express = require('express');
 var bodyParser = require('body-parser') 
 const app = express();
 import EtoEncryption from './encryption';
+import GenerateExcel from './generateExcel';
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(bodyParser.urlencoded({ extended: false })) ;
@@ -26,6 +27,11 @@ app.post('/encrypt', (req, res, next) => {
 app.post('/decrypt', (req, res, next) => {
     let result = EtoEncryption.defaultDecrypt(req,res,next);
     res.json(result);
+})
+
+app.post('/generateExcel', (req, res, next) => {
+  let result = GenerateExcel(req,res,next);
+  res.json(result);
 })
   
 
