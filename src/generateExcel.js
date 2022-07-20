@@ -8,6 +8,7 @@ const GenerateExcel = (req, res, next)=>{
 		const fields = Object.keys(req.body[0]);
 		const opts = { fields };
 		const csv = parse(req.body, opts);		
+		res.set("Content-Type", "text/csv");
 		res.send(csv);
 	  } catch (err) {
 		console.error(err);
