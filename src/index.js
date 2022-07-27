@@ -11,7 +11,7 @@ import GenerateExcel from './generateExcel';
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(bodyParser.urlencoded({ extended: false })) ;
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit: '50mb'}));
 app.use(express.static('.'));
 
 // http://expressjs.com/en/starter/basic-routing.html
